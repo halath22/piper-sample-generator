@@ -302,7 +302,7 @@ def get_phonemes(voice, config, text, verbose):
     # Combine all sentences
     phonemes = [
         p
-        for sentence_phonemes in phonemize_espeak(text, voice)
+        for sentence_phonemes in phonemize_espeak(text, "de")
         for p in sentence_phonemes
     ]
     if verbose is True:
